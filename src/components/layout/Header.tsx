@@ -1,17 +1,21 @@
 import { useState, useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import { Menu, X, Phone } from 'lucide-react'
 import { contactInfo, bookingUrl } from '../../data/contact'
 
 const navLinks = [
-  { label: 'About', href: '#about' },
-  { label: 'Rooms', href: '#rooms' },
-  { label: 'Reviews', href: '#testimonials' },
-  { label: 'Contact', href: '#contact' }
+  { label: 'Home', href: '/' },
+  { label: 'About', href: '/about' },
+  { label: 'Rooms', href: '/#rooms' },
+  { label: 'Reviews', href: '/#testimonials' },
+  { label: 'News', href: '/latest-news' },
+  { label: 'Contact', href: '/contact-us' }
 ]
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const location = useLocation()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,13 +25,39 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    e.preventDefault()
-    const element = document.querySelector(href)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-    }
+  const handleNavClick = (href: string) => {
     setIsMobileMenuOpen(false)
+
+    // Handle anchor links on the home page
+    if (href.startsWith('/#')) {
+      const anchor = href.substring(2)
+      if (location.pathname === '/') {
+        // Already on home page, scroll to anchor
+        const element = document.getElementById(anchor)
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' })
+        }
+      }
+      // If not on home page, the Link will navigate there and the anchor will be handled
+    }
+  }
+
+  // Handle hash navigation after page load
+  useEffect(() => {
+    if (location.hash && location.pathname === '/') {
+      const element = document.getElementById(location.hash.substring(1))
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' })
+        }, 100)
+      }
+    }
+  }, [location])
+
+  const isActive = (href: string) => {
+    if (href === '/') return location.pathname === '/'
+    if (href.startsWith('/#')) return false
+    return location.pathname === href
   }
 
   return (
@@ -42,28 +72,37 @@ export default function Header() {
     >
       <nav className="max-w-[1400px] mx-auto px-8 py-4 flex justify-between items-center">
         {/* Logo */}
-        <a
-          href="#"
+        <Link
+          to="/"
           className="font-heading text-2xl font-semibold text-charcoal no-underline tracking-[0.02em]"
-          onClick={(e) => {
-            e.preventDefault()
-            window.scrollTo({ top: 0, behavior: 'smooth' })
-          }}
         >
           Chelsea <span className="text-gold">Park</span>
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
-        <ul className="hidden md:flex gap-10 items-center list-none m-0 p-0">
+        <ul className="hidden md:flex gap-8 items-center list-none m-0 p-0">
           {navLinks.map((link) => (
             <li key={link.href}>
-              <a
-                href={link.href}
-                onClick={(e) => handleNavClick(e, link.href)}
-                className="text-warm-gray no-underline text-[0.9rem] font-normal tracking-[0.03em] transition-colors duration-300 hover:text-gold"
-              >
-                {link.label}
-              </a>
+              {link.href.startsWith('/#') ? (
+                <Link
+                  to={link.href}
+                  onClick={() => handleNavClick(link.href)}
+                  className={`no-underline text-[0.9rem] font-normal tracking-[0.03em] transition-colors duration-300 hover:text-gold ${
+                    isActive(link.href) ? 'text-gold' : 'text-warm-gray'
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <Link
+                  to={link.href}
+                  className={`no-underline text-[0.9rem] font-normal tracking-[0.03em] transition-colors duration-300 hover:text-gold ${
+                    isActive(link.href) ? 'text-gold' : 'text-warm-gray'
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              )}
             </li>
           ))}
         </ul>
@@ -109,14 +148,16 @@ export default function Header() {
       >
         <div className="flex flex-col p-8">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.href}
-              href={link.href}
-              onClick={(e) => handleNavClick(e, link.href)}
-              className="py-4 text-charcoal no-underline text-lg font-normal border-b border-light-gray"
+              to={link.href}
+              onClick={() => handleNavClick(link.href)}
+              className={`py-4 no-underline text-lg font-normal border-b border-light-gray ${
+                isActive(link.href) ? 'text-gold' : 'text-charcoal'
+              }`}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
           <div className="mt-8 flex flex-col gap-4">
             <a

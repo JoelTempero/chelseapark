@@ -1,25 +1,26 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
-import Hero from './components/sections/Hero'
-import About from './components/sections/About'
-import Rooms from './components/sections/Rooms'
-import Testimonials from './components/sections/Testimonials'
-import Awards from './components/sections/Awards'
-import Contact from './components/sections/Contact'
+import Home from './pages/Home'
+import AboutPage from './pages/AboutPage'
+import ContactPage from './pages/ContactPage'
+import NewsPage from './pages/NewsPage'
+import ScrollToTop from './components/layout/ScrollToTop'
 
 export default function App() {
   return (
-    <>
+    <BrowserRouter basename="/chelseapark">
+      <ScrollToTop />
       <Header />
       <main>
-        <Hero />
-        <About />
-        <Rooms />
-        <Testimonials />
-        <Awards />
-        <Contact />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact-us" element={<ContactPage />} />
+          <Route path="/latest-news" element={<NewsPage />} />
+        </Routes>
       </main>
       <Footer />
-    </>
+    </BrowserRouter>
   )
 }
