@@ -76,7 +76,7 @@ export default function Header() {
           <img
             src="https://www.chelseapark.co.nz/wp-content/uploads/sites/454/2023/12/Chelsea-Park-Logo.jpg"
             alt="Chelsea Park Motor Lodge"
-            className="h-12 w-auto"
+            className="h-16 w-auto"
           />
         </Link>
 
@@ -143,9 +143,13 @@ export default function Header() {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden fixed inset-0 top-[72px] bg-cream z-40 transform transition-transform duration-300 ${
+        className={`md:hidden fixed inset-0 top-[88px] z-40 transform transition-transform duration-300 ${
           isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
+        style={{
+          background: 'rgba(250, 247, 242, 0.98)',
+          backdropFilter: 'blur(20px)'
+        }}
       >
         <div className="flex flex-col p-8">
           {navLinks.map((link) => (

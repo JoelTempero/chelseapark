@@ -47,7 +47,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="inline-block px-5 py-2 border border-gold/50 text-gold-light text-[0.75rem] tracking-[0.2em] uppercase mb-8"
+          className="inline-block px-5 py-2 bg-white/95 text-gold text-[0.75rem] tracking-[0.2em] uppercase mb-8 font-medium"
         >
           Nelson, New Zealand
         </motion.span>
@@ -87,7 +87,7 @@ export default function Hero() {
           <a
             href="#rooms"
             onClick={handleViewRooms}
-            className="inline-block px-7 py-4 bg-transparent border border-gold text-gold no-underline font-medium text-[0.85rem] tracking-[0.05em] uppercase transition-all duration-300 hover:bg-gold hover:text-white"
+            className="inline-block px-7 py-4 bg-white text-gold no-underline font-medium text-[0.85rem] tracking-[0.05em] uppercase transition-all duration-300 hover:bg-gold hover:text-white"
           >
             View Rooms
           </a>
