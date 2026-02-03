@@ -9,11 +9,12 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="md:col-span-1">
-            <Link
-              to="/"
-              className="font-heading text-2xl font-semibold text-white no-underline tracking-[0.02em] inline-block mb-4"
-            >
-              Chelsea <span className="text-gold">Park</span>
+            <Link to="/" className="inline-block mb-4">
+              <img
+                src="https://www.chelseapark.co.nz/wp-content/uploads/sites/454/2023/12/Chelsea-Park-Logo.jpg"
+                alt="Chelsea Park Motor Lodge"
+                className="h-14 w-auto brightness-0 invert"
+              />
             </Link>
             <p className="text-white/60 text-sm leading-relaxed">
               A friendly 4 star motor lodge in the heart of Nelson City, New Zealand.

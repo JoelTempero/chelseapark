@@ -72,11 +72,12 @@ export default function Header() {
     >
       <nav className="max-w-[1400px] mx-auto px-8 py-4 flex justify-between items-center">
         {/* Logo */}
-        <Link
-          to="/"
-          className="font-heading text-2xl font-semibold text-charcoal no-underline tracking-[0.02em]"
-        >
-          Chelsea <span className="text-gold">Park</span>
+        <Link to="/" className="block">
+          <img
+            src="https://www.chelseapark.co.nz/wp-content/uploads/sites/454/2023/12/Chelsea-Park-Logo.jpg"
+            alt="Chelsea Park Motor Lodge"
+            className="h-12 w-auto"
+          />
         </Link>
 
         {/* Desktop Navigation */}
