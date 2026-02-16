@@ -11,7 +11,7 @@ import ScrollToTop from './components/layout/ScrollToTop'
 
 export default function App() {
   return (
-    <BrowserRouter basename="/chelseapark">
+    <BrowserRouter>
       <ScrollToTop />
       <Header />
       <main>
