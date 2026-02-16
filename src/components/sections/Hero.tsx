@@ -34,7 +34,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 opacity-40"
         style={{
-          backgroundImage: `url('https://www.chelseapark.co.nz/wp-content/uploads/sites/454/2023/12/IMGL3902-Edit_1024-2.jpg')`,
+          backgroundImage: `url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/236999184.jpg?k=b9d31203a46e3edaccf96dcf11bdb8402413a4bba96ecebe86bf43caeaaf784e&o=')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           filter: 'grayscale(20%)'

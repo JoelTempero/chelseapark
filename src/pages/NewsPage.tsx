@@ -37,7 +37,7 @@ const newsItems = [
     title: 'Summer Activities in Nelson',
     date: '2024-11-01',
     excerpt: "Nelson offers endless summer activities. From the golden beaches of Tahunanui to the art galleries and cafes of the city centre, discover what makes Nelson New Zealand's sunniest destination.",
-    image: 'https://www.chelseapark.co.nz/wp-content/uploads/sites/454/2023/12/IMGL4249-Edit_1024.jpg',
+    image: 'https://chelsea-park-motor-lodge.southislandnz.net/data/Pics/OriginalPhoto/17133/1713307/1713307113/chelsea-park-motor-lodge-nelson-nelson-pic-1.JPEG',
     category: 'Local Guide'
   }
 ]
@@ -63,7 +63,7 @@ export default function NewsPage() {
         className="relative h-[40vh] min-h-[350px] flex items-center justify-center"
       >
         <img
-          src="https://www.chelseapark.co.nz/wp-content/uploads/sites/454/2023/12/IMGL4249-Edit_1024.jpg"
+          src="https://chelsea-park-motor-lodge.southislandnz.net/data/Pics/OriginalPhoto/17427/1742729/1742729433/chelsea-park-motor-lodge-nelson-nelson-pic-3.JPEG"
           alt="Chelsea Park Motor Lodge"
           className="absolute inset-0 w-full h-full object-cover"
         />

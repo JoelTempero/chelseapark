@@ -20,7 +20,7 @@ export default function About() {
           className="relative"
         >
           <img
-            src="https://www.chelseapark.co.nz/wp-content/uploads/sites/454/2023/12/IMGL4171-Edit_1024.jpg"
+            src="https://chelsea-park-motor-lodge.southislandnz.net/data/Pics/OriginalPhoto/12221/1222188/1222188904/chelsea-park-motor-lodge-nelson-nelson-pic-5.JPEG"
             alt="Chelsea Park Motor Lodge Interior"
             className="w-full h-[500px] object-cover"
           />

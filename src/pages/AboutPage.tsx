@@ -40,7 +40,7 @@ export default function AboutPage() {
         className="relative h-[50vh] min-h-[400px] flex items-center justify-center"
       >
         <img
-          src="https://www.chelseapark.co.nz/wp-content/uploads/sites/454/2023/12/IMGL4249-Edit_1024.jpg"
+          src="https://chelsea-park-motor-lodge.southislandnz.net/data/Pics/OriginalPhoto/17133/1713307/1713307113/chelsea-park-motor-lodge-nelson-nelson-pic-1.JPEG"
           alt="Chelsea Park Motor Lodge"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -105,7 +105,7 @@ export default function AboutPage() {
             className="relative"
           >
             <img
-              src="https://www.chelseapark.co.nz/wp-content/uploads/sites/454/2023/12/IMGL4171-Edit_1024.jpg"
+              src="https://chelsea-park-motor-lodge.southislandnz.net/data/Pics/OriginalPhoto/15506/1550662/1550662510/chelsea-park-motor-lodge-nelson-nelson-pic-4.JPEG"
               alt="Chelsea Park Motor Lodge Interior"
               className="w-full h-[500px] object-cover"
             />

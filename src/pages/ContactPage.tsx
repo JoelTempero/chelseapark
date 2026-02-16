@@ -45,7 +45,7 @@ export default function ContactPage() {
         className="relative h-[40vh] min-h-[350px] flex items-center justify-center"
       >
         <img
-          src="https://www.chelseapark.co.nz/wp-content/uploads/sites/454/2023/12/IMGL4249-Edit_1024.jpg"
+          src="https://chelsea-park-motor-lodge.southislandnz.net/data/Pics/OriginalPhoto/17133/1713306/1713306576/chelsea-park-motor-lodge-nelson-nelson-pic-2.JPEG"
           alt="Chelsea Park Motor Lodge"
           className="absolute inset-0 w-full h-full object-cover"
         />

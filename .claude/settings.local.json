@@ -9,7 +9,31 @@
       "Bash(git push)",
       "Bash(git fetch:*)",
       "Bash(npx tsc:*)",
-      "Bash(npx vite build)"
+      "Bash(npx vite build)",
+      "WebFetch(domain:www.booking.com)",
+      "WebSearch",
+      "WebFetch(domain:chelsea-park-nelson-city.h-rez.com)",
+      "WebFetch(domain:chelsea-park-motor-lodge.southislandnz.net)",
+      "WebFetch(domain:www.kayak.com)",
+      "WebFetch(domain:www.klook.com)",
+      "WebFetch(domain:www.trip.com)",
+      "WebFetch(domain:chelseaparkmotorlodge.luxury-hotels.com)",
+      "WebFetch(domain:www.agoda.com)",
+      "WebFetch(domain:www.google.com)",
+      "WebFetch(domain:www.makemytrip.com)",
+      "WebFetch(domain:www.newzealand.com)",
+      "WebFetch(domain:www.makemytrip.global)",
+      "WebFetch(domain:www.hotels.com)",
+      "WebFetch(domain:cf.bstatic.com)",
+      "WebFetch(domain:book.isite.nz)",
+      "WebFetch(domain:www.nelsontasman.nz)",
+      "WebFetch(domain:www.expedia.com)",
+      "WebFetch(domain:webcache.googleusercontent.com)",
+      "WebFetch(domain:m.booking.com)",
+      "WebFetch(domain:www.tripadvisor.com)",
+      "WebFetch(domain:uniquelynelson.nz)",
+      "Bash(curl:*)",
+      "WebFetch(domain:cc.bingj.com)"
     ]
   }
 }
