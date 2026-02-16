@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Facebook, Instagram, Mail, Phone, MapPin } from 'lucide-react'
 import { contactInfo } from '../../data/contact'
+import logo from '../../assets/logo.png'
 
 export default function Footer() {
   return (
@@ -11,7 +12,7 @@ export default function Footer() {
           <div className="md:col-span-1">
             <Link to="/" className="inline-block mb-4">
               <img
-                src="https://www.chelseapark.co.nz/wp-content/uploads/sites/454/2023/12/Chelsea-Park-Logo.jpg"
+                src={logo}
                 alt="Chelsea Park Motor Lodge"
                 className="h-14 w-auto brightness-0 invert"
               />

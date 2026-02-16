@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Menu, X, Phone } from 'lucide-react'
 import { contactInfo, bookingUrl } from '../../data/contact'
+import logo from '../../assets/logo.png'
 
 const navLinks = [
   { label: 'Home', href: '/' },
@@ -74,7 +75,7 @@ export default function Header() {
         {/* Logo */}
         <Link to="/" className="block">
           <img
-            src="https://www.chelseapark.co.nz/wp-content/uploads/sites/454/2023/12/Chelsea-Park-Logo.jpg"
+            src={logo}
             alt="Chelsea Park Motor Lodge"
             className="h-16 w-auto"
           />
