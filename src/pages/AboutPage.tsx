@@ -68,18 +68,22 @@ export default function AboutPage() {
           >
             <h2 className="text-[2.5rem] mb-6">Our Story</h2>
             <p className="text-warm-gray mb-6">
-              Chelsea Park Motor Lodge is a friendly 4 star motor lodge located in the heart of Nelson City.
-              We pride ourselves on providing comfortable, quality accommodation with genuine Kiwi hospitality.
+              At Chelsea Park Motor Lodge, your holiday begins the moment you arrive. Your host, Carey White, isn't just here to check you in—he's here to make your Nelson experience unforgettable.
             </p>
             <p className="text-warm-gray mb-6">
-              Your host, Carey White, isn't just here to check you in—he's here to make your Nelson experience
-              unforgettable. With local knowledge and a passion for hospitality, Carey ensures every guest
-              feels welcome and well looked after.
+              Born in the small West Coast town of Hokitika, Carey grew up with a love for genuine Kiwi hospitality.
+            </p>
+            <p className="text-warm-gray mb-6">
+              But life had other plans, whisking him away to work in high-end resorts and hotels across the globe—collecting stories, friendships, and a touch of international style along the way. Now back on home soil, Carey blends that worldly polish with a relaxed New Zealand welcome.
+            </p>
+            <p className="text-warm-gray mb-6">
+              Whether you're kayaking in the Abel Tasman, cycling the Great Taste Trail or savouring a glass of Nelson's finest sauvignon blanc, Carey knows the best spots—and can make your bookings too.
+            </p>
+            <p className="text-warm-gray mb-6">
+              With 10 quality boutique rooms, Chelsea Park Motor Lodge is the perfect size for personal, attentive service—where you're more than just a room number.
             </p>
             <p className="text-warm-gray mb-8">
-              Our boutique motor lodge is the perfect size for personal, attentive service. Every room features
-              north-facing patios to catch that famous Nelson sunshine, fully equipped kitchenettes, and all
-              the comforts you need for a relaxing stay.
+              Settle in, breathe out, and let Nelson work its sunny magic.
             </p>
 
             <div className="grid grid-cols-2 gap-4">
