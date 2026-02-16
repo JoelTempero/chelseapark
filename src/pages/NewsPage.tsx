@@ -63,7 +63,7 @@ export default function NewsPage() {
         className="relative h-[40vh] min-h-[350px] flex items-center justify-center"
       >
         <img
-          src="https://chelsea-park-motor-lodge.southislandnz.net/data/Pics/OriginalPhoto/17427/1742729/1742729433/chelsea-park-motor-lodge-nelson-nelson-pic-3.JPEG"
+          src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/82/a7/ce/chelsea-park-motor-lodge.jpg?w=900&h=500&s=1"
           alt="Chelsea Park Motor Lodge"
           className="absolute inset-0 w-full h-full object-cover"
         />

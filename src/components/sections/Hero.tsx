@@ -61,15 +61,6 @@ export default function Hero() {
           Welcome to Chelsea Park Motor Lodge
         </motion.h1>
 
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.4 }}
-          className="text-[1.1rem] text-white/80 max-w-[600px] mx-auto mb-10"
-        >
-          Your holiday begins the moment you arrive. With 10 quality boutique rooms, we offer personal, attentive service where you're more than just a room number.
-        </motion.p>
-
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
