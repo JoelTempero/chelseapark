@@ -109,8 +109,8 @@ export default function AboutPage() {
             className="relative"
           >
             <img
-              src="https://chelsea-park-motor-lodge.southislandnz.net/data/Pics/OriginalPhoto/15506/1550662/1550662510/chelsea-park-motor-lodge-nelson-nelson-pic-4.JPEG"
-              alt="Chelsea Park Motor Lodge Interior"
+              src="https://b1494878.smushcdn.com/1494878/wp-content/uploads/sites/454/2025/10/IMG_8151-768x957.jpg?lossy=0&strip=1&webp=1"
+              alt="Carey White - Your Host at Chelsea Park Motor Lodge"
               className="w-full h-[500px] object-cover"
             />
             <div className="absolute -top-5 -left-5 right-5 bottom-5 border-2 border-gold -z-10 hidden md:block" />

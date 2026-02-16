@@ -110,10 +110,18 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="pt-8 border-t border-white/10 text-center">
+        <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-white/40 text-sm">
             &copy; {new Date().getFullYear()} Chelsea Park Motor Lodge. All Rights Reserved.
           </p>
+          <div className="flex gap-6">
+            <Link to="/privacy-policy" className="text-white/40 hover:text-gold transition-colors no-underline text-sm">
+              Privacy Policy
+            </Link>
+            <Link to="/terms-conditions" className="text-white/40 hover:text-gold transition-colors no-underline text-sm">
+              Terms & Conditions
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
